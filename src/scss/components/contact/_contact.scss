@@ -1,0 +1,68 @@
+@import "./contact-bg";
+
+.contact {
+  @include widthHeight(100%, calc(50vh - 70px));
+
+  @include flex-center;
+
+  background-color: $black;
+
+  position: relative;
+  z-index: 10;
+
+  &__wrapper {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__white {
+    padding-top: 20px;
+    color: $main-color;
+  }
+
+  &__btns {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  &__btn {
+    width: 100%;
+    display: flex;
+
+    margin: 10px 0;
+    padding: 0 10px;
+  }
+
+  &__btn:first-child,
+  &__btn:nth-child(3) {
+    justify-content: end;
+  }
+
+  &__btn:nth-child(2),
+  &__btn:last-child {
+    justify-content: start;
+  }
+
+  &__link {
+    width: 130px;
+    color: $main-color;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #6b6bfa;
+    text-align: center;
+    border-radius: 10px;
+
+    @include transition;
+
+    &:hover,
+    &:active {
+      background-color: #ff7dd4;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+import "@scss/style";
+// import { pitch } from "mini-css-extract-plugin/types/loader";
+console.log("working");
+
+// import "./img/imgList";
+
+// async function getInfo() {
+//   let url = "https://my-json-server.typicode.com/Vi-encore/test/projects";
+//   let response = await fetch(url)
+//     .then((response) => response.json())
+//     .then((json) => console.log(json));
+// }
+
+// setTimeout(getInfo(), 1500);
+
+//Назви змінних поки такі, бо зараз тільки тестую тут
+
+let imgs = document.querySelectorAll(".work__card--img");
+let links = document.querySelectorAll(".work__card-link");
+
+imgs.forEach((photo) => {
+  photo.addEventListener("click", () => {
+    links.forEach((link) => {
+      link.click();
+    });
+  });
+});

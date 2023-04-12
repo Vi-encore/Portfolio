@@ -1,0 +1,110 @@
+.skills {
+  @include widthHeight(100%, calc(100vh - 70px));
+
+  @include flex-center;
+
+  &__wrapper {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 45%);
+    gap: 5%;
+  }
+
+  &__card {
+    max-width: 300px;
+    margin: 0 auto;
+
+    padding: 20px 0;
+    @include flex-evenly;
+    flex-direction: column;
+
+    border-radius: 15px;
+    -webkit-box-shadow: 5px 5px 15px 1px #b1c8da;
+    box-shadow: 5px 5px 15px 1px #b1c8da;
+
+    &--circle {
+      width: 100px;
+      height: 100px;
+      @include flex-center;
+      border-radius: 50%;
+      //   padding-bottom: 10px;
+    }
+
+    &--percent {
+      font-size: $em-1-5;
+      font-weight: $large;
+      letter-spacing: 1px;
+      //   color: $main-color;
+    }
+  }
+
+  &__info-head {
+    font-size: $em-1-5;
+    // text-transform: uppercase;
+    font-weight: $mid;
+  }
+
+  &__info-text {
+    // height: 300px;
+    padding: 0 60px;
+    text-align: justify;
+    font-weight: $mid;
+    line-height: 25px;
+    font-family: $side-font;
+    letter-spacing: 1.5px;
+    // overflow: hidden;
+    // display: -webkit-box;
+    // -webkit-line-clamp: 3; /* number of lines to show */
+    // line-clamp: 3;
+    // -webkit-box-orient: vertical;
+  }
+
+  //   &__info-text:hover {
+  //     -webkit-line-clamp: unset;
+  //     line-clamp: unset;
+  //   }
+
+  //   &__info-text:hover &__card {
+  //     height: 400px;
+  //   }
+}
+
+.c1 {
+  background-color: #e4392650;
+  border: 5px #e43926 solid;
+}
+
+.c2 {
+  background-color: #2545c250;
+  border: 5px #2545c2 solid;
+}
+
+.c3 {
+  background-color: #eed30c50;
+  border: 5px #eed30c solid;
+}
+
+.c4 {
+  background-color: #f0503350;
+  border: 5px #f05033 solid;
+}
+
+.c5 {
+  background-color: #cd679950;
+  border: 5px #cd6799 solid;
+}
+
+.c6 {
+  background-color: #63cb5350;
+  border: 5px #63cb53 solid;
+}

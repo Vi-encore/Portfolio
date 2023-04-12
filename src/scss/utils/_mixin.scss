@@ -1,0 +1,25 @@
+@mixin backdrop($color) {
+  background-color: $color;
+  backdrop-filter: blur(15px) saturate(100%) brightness(100%);
+}
+
+@mixin widthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@mixin transition {
+  transition: all 150ms ease-in-out;
+}

@@ -1,0 +1,50 @@
+.contact__bg {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  filter: blur(45px);
+
+  &__circle-1 {
+    @include widthHeight(70px, 70px);
+    background-color: #ff7dd4;
+    border-radius: 50%;
+
+    z-index: 4;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+  }
+
+  &__circle-2 {
+    @include widthHeight(100px, 100px);
+    background-color: #ff8f5f;
+    border-radius: 50%;
+    z-index: 3;
+
+    position: absolute;
+    bottom: -70px;
+    left: 60px;
+  }
+
+  &__circle-3 {
+    @include widthHeight(100px, 100px);
+    background-color: #6b6bfa;
+    border-radius: 50%;
+    z-index: 3;
+
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+  }
+
+  &__circle-4 {
+    @include widthHeight(70px, 70px);
+    background-color: #63cb53;
+    border-radius: 50%;
+    z-index: 4;
+
+    position: absolute;
+    top: -50px;
+    right: 15px;
+  }
+}

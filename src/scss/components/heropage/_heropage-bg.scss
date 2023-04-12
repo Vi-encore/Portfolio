@@ -1,0 +1,106 @@
+.heropage {
+  &__bg {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    filter: blur(45px);
+    z-index: 2;
+  }
+
+  &__circle1 {
+    @include widthHeight(200px, 200px);
+
+    background-color: #6b6bff;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 350px;
+    left: 170px;
+
+    z-index: 3;
+  }
+
+  &__circle2 {
+    @include widthHeight(300px, 300px);
+    background-color: #ff7dd4;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 140px;
+    left: 70px;
+
+    z-index: 2;
+  }
+
+  &__circle3 {
+    @include widthHeight(100px, 100px);
+    background-color: #63cb53;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 4;
+    top: 450px;
+    left: 330px;
+  }
+
+  &__circle4 {
+    @include widthHeight(150px, 150px);
+    background-color: #ff8f5f;
+    border-radius: 50%;
+
+    z-index: 2;
+
+    position: absolute;
+    right: 40px;
+    top: 90px;
+  }
+
+  &__circle5 {
+    @include widthHeight(100px, 100px);
+    background-color: #6b6bfa;
+    border-radius: 50%;
+
+    z-index: 3;
+    position: absolute;
+    right: 140px;
+    top: 75px;
+  }
+
+  &__circle6 {
+    @include widthHeight(100px, 100px);
+    background-color: #63cb53;
+    border-radius: 50%;
+
+    position: absolute;
+    z-index: 4;
+    top: 225px;
+    right: 50px;
+  }
+
+  &__circle7 {
+    @include widthHeight(120px, 120px);
+
+    background-color: #5f5ffb;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 500px;
+    right: 270px;
+
+    z-index: 3;
+  }
+
+  &__circle8 {
+    @include widthHeight(90px, 90px);
+    background-color: #fe8754;
+    border-radius: 50%;
+
+    z-index: 4;
+
+    position: absolute;
+    right: 350px;
+    top: 550px;
+  }
+}

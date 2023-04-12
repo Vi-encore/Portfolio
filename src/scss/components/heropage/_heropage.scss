@@ -1,0 +1,105 @@
+@import "./heropage-bg";
+
+.heropage {
+  @include widthHeight(100%, calc(100vh - 70px));
+  position: relative;
+
+  &__wrapper {
+    position: relative;
+    z-index: 6;
+    background-color: transparent;
+    padding-top: 70px;
+
+    max-width: 80%;
+    // height: 100vh;
+    margin: 0 auto;
+    // padding-top: 7%;
+    // @include flex-center;
+    // flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+  }
+
+  &__photo {
+    // background-image: url("./../img/me-photo.jpg");
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    max-width: 450px;
+    height: 100%;
+    border-radius: 44% 46% 69% 31% / 51% 37% 63% 48%;
+    // box-shadow: inset 0px 0px 87px 82px #e3f1fd;
+    // box-shadow: 0 0 10px 10px $main-color inset;
+    // box-shadow: inset;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  &__header {
+    font-size: $em-2-5;
+    text-transform: uppercase;
+    font-weight: $large;
+    letter-spacing: 5px;
+  }
+
+  &__text {
+    font-family: $side-font;
+    font-weight: $mid;
+    font-size: $em;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+
+  &__i {
+    color: $main-color;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  &__i {
+    font-size: $em-1-5;
+    @include transition;
+  }
+
+  &__download {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #6b6bff;
+    @include transition;
+    @include flex-center;
+
+    &--link {
+      @extend .heropage__i;
+      font-size: $em;
+
+      @include transition;
+    }
+  }
+
+  &__download:hover,
+  &__download:active,
+  &__download:focus {
+    background-color: #ff6cce;
+  }
+
+  // &__download:hover &__download--link,
+  // &__download:active &__download--link,
+  // &__download:focus &__download--link {
+  //   font-size: 18px;
+  // }
+
+  // &__download:hover &__i,
+  // &__download:active &__i,
+  // &__download:focus &__i {
+  //   font-size: 20px;
+  // }
+}

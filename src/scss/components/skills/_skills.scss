@@ -30,14 +30,19 @@
 
     padding: 20px 0;
     @include flex-evenly;
+    @include transition;
     flex-direction: column;
 
-    border-radius: 15px;
+    border-radius: 30px;
     -webkit-box-shadow: 5px 5px 15px 1px #b1c8da8a;
     box-shadow: 5px 5px 15px 1px #b1c8da8a;
     background-color: $main-color;
 
     position: relative;
+
+    &:hover {
+      scale: 1.1;
+    }
 
     &--circle {
       //   padding-bottom: 10px;

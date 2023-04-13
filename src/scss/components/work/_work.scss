@@ -27,12 +27,17 @@
   }
 
   &__card {
-    max-width: 30%;
+    max-width: 300px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 30px;
     -webkit-box-shadow: 5px 5px 15px 1px #b1c8da8a;
     box-shadow: 5px 5px 15px 1px #b1c8da8a;
     background-color: $main-color;
+    @include transition;
+
+    &:hover {
+      scale: 1.1;
+    }
 
     &--preview {
       width: 100%;
@@ -48,19 +53,17 @@
     &--img {
       width: inherit;
       height: inherit;
-      border-radius: 15px;
-
-      @include transition;
+      border-radius: 30px;
     }
 
-    &--img:hover {
-      border: 5px #ff7dd4 solid;
-      border-radius: 15px;
-    }
+    // &--img:hover {
+    //   border: 5px #ff7dd420 solid;
+    //   border-radius: 30px;
+    // }
 
     &--btn {
       @include flex-center;
-      padding: 20px 0px 10px;
+      padding: 20px 0;
     }
 
     &--github {

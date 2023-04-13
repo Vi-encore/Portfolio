@@ -2,129 +2,80 @@
   &__bg {
     position: absolute;
 
-    width: 100%;
-    height: 100%;
-
+    @include widthHeight(100%, 100%);
     filter: blur(45px);
     z-index: 2;
   }
 
-  &__circle1 {
-    @include widthHeight(200px, 200px);
+  &__circle {
+    &1 {
+      @include widthHeight(200px, 200px);
+      @include circle-config($purple, 3);
+      top: 350px;
+      left: 170px;
+    }
 
-    background-color: $purple;
-    border-radius: 50%;
+    &2 {
+      @include widthHeight(300px, 300px);
+      @include circle-config($pink, 2);
+      top: 140px;
+      left: 70px;
+    }
 
-    position: absolute;
-    top: 350px;
-    left: 170px;
+    &3 {
+      @include widthHeight(100px, 100px);
+      @include circle-config($green, 4);
+      top: 450px;
+      left: 330px;
+    }
 
-    z-index: 3;
-  }
+    &4 {
+      @include widthHeight(150px, 150px);
+      @include circle-config($orange, 2);
+      right: 40px;
+      top: 90px;
+    }
 
-  &__circle2 {
-    @include widthHeight(300px, 300px);
-    background-color: $pink;
-    border-radius: 50%;
+    &5 {
+      @include widthHeight(100px, 100px);
+      @include circle-config($purple, 3);
+      right: 140px;
+      top: 75px;
+    }
 
-    position: absolute;
-    top: 140px;
-    left: 70px;
+    &6 {
+      @include widthHeight(100px, 100px);
+      @include circle-config($green, 4);
+      top: 225px;
+      right: 50px;
+    }
 
-    z-index: 2;
-  }
+    &7 {
+      @include widthHeight(120px, 120px);
+      @include circle-config($purple, 3);
+      top: 500px;
+      right: 270px;
+    }
 
-  &__circle3 {
-    @include widthHeight(100px, 100px);
-    background-color: $green;
-    border-radius: 50%;
+    &8 {
+      @include widthHeight(90px, 90px);
+      @include circle-config($orange, 4);
+      right: 350px;
+      top: 550px;
+    }
 
-    position: absolute;
-    z-index: 4;
-    top: 450px;
-    left: 330px;
-  }
+    &9 {
+      @include widthHeight(70px, 70px);
+      @include circle-config($pink, 4);
+      right: 30%;
+      top: 10px;
+    }
 
-  &__circle4 {
-    @include widthHeight(150px, 150px);
-    background-color: $orange;
-    border-radius: 50%;
-
-    z-index: 2;
-
-    position: absolute;
-    right: 40px;
-    top: 90px;
-  }
-
-  &__circle5 {
-    @include widthHeight(100px, 100px);
-    background-color: $purple;
-    border-radius: 50%;
-
-    z-index: 3;
-    position: absolute;
-    right: 140px;
-    top: 75px;
-  }
-
-  &__circle6 {
-    @include widthHeight(100px, 100px);
-    background-color: $green;
-    border-radius: 50%;
-
-    position: absolute;
-    z-index: 4;
-    top: 225px;
-    right: 50px;
-  }
-
-  &__circle7 {
-    @include widthHeight(120px, 120px);
-
-    background-color: $purple;
-    border-radius: 50%;
-
-    position: absolute;
-    top: 500px;
-    right: 270px;
-
-    z-index: 3;
-  }
-
-  &__circle8 {
-    @include widthHeight(90px, 90px);
-    background-color: $orange;
-    border-radius: 50%;
-
-    z-index: 4;
-
-    position: absolute;
-    right: 350px;
-    top: 550px;
-  }
-
-  &__circle9 {
-    @include widthHeight(70px, 70px);
-    background-color: $pink;
-    border-radius: 50%;
-
-    z-index: 4;
-
-    position: absolute;
-    right: 30%;
-    top: 10px;
-  }
-
-  &__circle10 {
-    @include widthHeight(70px, 70px);
-    background-color: $green;
-    border-radius: 50%;
-
-    z-index: 5;
-
-    position: absolute;
-    right: 35%;
-    top: 0px;
+    &10 {
+      @include widthHeight(70px, 70px);
+      @include circle-config($green, 5);
+      right: 35%;
+      top: 0px;
+    }
   }
 }

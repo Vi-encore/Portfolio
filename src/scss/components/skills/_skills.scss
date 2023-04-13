@@ -1,7 +1,10 @@
+@import "./skills-bg";
+
 .skills {
   @include widthHeight(100%, calc(100vh - 70px));
 
   @include flex-center;
+  position: relative;
 
   &__wrapper {
     width: 80%;
@@ -10,6 +13,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 8;
   }
 
   &__grid {
@@ -29,8 +33,9 @@
     flex-direction: column;
 
     border-radius: 15px;
-    -webkit-box-shadow: 5px 5px 15px 1px #b1c8da;
-    box-shadow: 5px 5px 15px 1px #b1c8da;
+    -webkit-box-shadow: 5px 5px 15px 1px #b1c8da8a;
+    box-shadow: 5px 5px 15px 1px #b1c8da8a;
+    background-color: $main-color;
 
     &--circle {
       width: 100px;

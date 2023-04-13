@@ -1,7 +1,9 @@
+@import "./work-bg";
+
 .work {
   margin-top: 50px;
   @include widthHeight(100%, calc(90vh - 70px));
-
+  position: relative;
   @include flex-center;
 
   &__wrapper {
@@ -11,6 +13,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 8;
   }
 
   &__cards {
@@ -27,8 +30,9 @@
     max-width: 30%;
     padding: 10px;
     border-radius: 15px;
-    -webkit-box-shadow: 5px 5px 15px 1px #b1c8da;
-    box-shadow: 5px 5px 15px 1px #b1c8da;
+    -webkit-box-shadow: 5px 5px 15px 1px #b1c8da8a;
+    box-shadow: 5px 5px 15px 1px #b1c8da8a;
+    background-color: $main-color;
 
     &--preview {
       width: 100%;

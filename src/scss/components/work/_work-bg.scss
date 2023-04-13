@@ -1,0 +1,45 @@
+.work {
+  &-bg {
+    position: absolute;
+    @include widthHeight(100%, 100%);
+    filter: blur(40px);
+    z-index: 2;
+  }
+
+  &-circle {
+    &-1 {
+      @include widthHeight(120px, 120px);
+      @include circle-config($purple, 3);
+      top: 100px;
+      left: 100px;
+    }
+
+    &-2 {
+      @include widthHeight(80px, 80px);
+      @include circle-config($green, 4);
+      top: 200px;
+      left: 30px;
+    }
+
+    &-3 {
+      @include widthHeight(130px, 130px);
+      @include circle-config($orange, 3);
+      bottom: 80px;
+      left: 160px;
+    }
+
+    &-4 {
+      @include widthHeight(130px, 130px);
+      @include circle-config($pink, 3);
+      bottom: 120px;
+      right: 100px;
+    }
+
+    &-5 {
+      @include widthHeight(100px, 100px);
+      @include circle-config($orange, 4);
+      top: 100px;
+      right: 70px;
+    }
+  }
+}

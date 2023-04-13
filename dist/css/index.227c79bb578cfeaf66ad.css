@@ -152,29 +152,29 @@ body::-webkit-scrollbar-thumb {
 .heropage__circle1 {
   width: 200px;
   height: 200px;
-  background-color: #5f5ffb;
-  border-radius: 50%;
   position: absolute;
+  background-color: #6b6bfa;
+  border-radius: 50%;
+  z-index: 3;
   top: 350px;
   left: 170px;
-  z-index: 3;
 }
 .heropage__circle2 {
   width: 300px;
   height: 300px;
+  position: absolute;
   background-color: #ff7dd4;
   border-radius: 50%;
-  position: absolute;
+  z-index: 2;
   top: 140px;
   left: 70px;
-  z-index: 2;
 }
 .heropage__circle3 {
   width: 100px;
   height: 100px;
+  position: absolute;
   background-color: #63cb53;
   border-radius: 50%;
-  position: absolute;
   z-index: 4;
   top: 450px;
   left: 330px;
@@ -182,29 +182,29 @@ body::-webkit-scrollbar-thumb {
 .heropage__circle4 {
   width: 150px;
   height: 150px;
+  position: absolute;
   background-color: #fe8754;
   border-radius: 50%;
   z-index: 2;
-  position: absolute;
   right: 40px;
   top: 90px;
 }
 .heropage__circle5 {
   width: 100px;
   height: 100px;
-  background-color: #5f5ffb;
+  position: absolute;
+  background-color: #6b6bfa;
   border-radius: 50%;
   z-index: 3;
-  position: absolute;
   right: 140px;
   top: 75px;
 }
 .heropage__circle6 {
   width: 100px;
   height: 100px;
+  position: absolute;
   background-color: #63cb53;
   border-radius: 50%;
-  position: absolute;
   z-index: 4;
   top: 225px;
   right: 50px;
@@ -212,40 +212,40 @@ body::-webkit-scrollbar-thumb {
 .heropage__circle7 {
   width: 120px;
   height: 120px;
-  background-color: #5f5ffb;
-  border-radius: 50%;
   position: absolute;
+  background-color: #6b6bfa;
+  border-radius: 50%;
+  z-index: 3;
   top: 500px;
   right: 270px;
-  z-index: 3;
 }
 .heropage__circle8 {
   width: 90px;
   height: 90px;
+  position: absolute;
   background-color: #fe8754;
   border-radius: 50%;
   z-index: 4;
-  position: absolute;
   right: 350px;
   top: 550px;
 }
 .heropage__circle9 {
   width: 70px;
   height: 70px;
+  position: absolute;
   background-color: #ff7dd4;
   border-radius: 50%;
   z-index: 4;
-  position: absolute;
   right: 30%;
   top: 10px;
 }
 .heropage__circle10 {
   width: 70px;
   height: 70px;
+  position: absolute;
   background-color: #63cb53;
   border-radius: 50%;
   z-index: 5;
-  position: absolute;
   right: 35%;
   top: 0px;
 }
@@ -319,12 +319,81 @@ body::-webkit-scrollbar-thumb {
   background-color: #ff6cce;
 }
 
+.skills__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(40px);
+  z-index: 2;
+}
+.skills-circle-1 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background-color: #ff7dd4;
+  border-radius: 50%;
+  z-index: 3;
+  top: 200px;
+  left: 50px;
+}
+.skills-circle-2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-color: #6b6bfa;
+  border-radius: 50%;
+  z-index: 4;
+  top: 280px;
+  left: 35px;
+}
+.skills-circle-3 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #63cb53;
+  border-radius: 50%;
+  z-index: 4;
+  bottom: 150px;
+  left: 20px;
+}
+.skills-circle-4 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-color: #6b6bfa;
+  border-radius: 50%;
+  z-index: 4;
+  top: 150px;
+  right: 20px;
+}
+.skills-circle-5 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #63cb53;
+  border-radius: 50%;
+  z-index: 3;
+  bottom: 150px;
+  right: 20px;
+}
+.skills-circle-6 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-color: #fe8754;
+  border-radius: 50%;
+  z-index: 4;
+  bottom: 170px;
+  right: 50px;
+}
+
 .skills {
   width: 100%;
   height: calc(100vh - 70px);
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .skills__wrapper {
   width: 80%;
@@ -332,6 +401,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 8;
 }
 .skills__grid {
   height: 100%;
@@ -349,8 +419,9 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   flex-direction: column;
   border-radius: 15px;
-  -webkit-box-shadow: 5px 5px 15px 1px #b1c8da;
-  box-shadow: 5px 5px 15px 1px #b1c8da;
+  -webkit-box-shadow: 5px 5px 15px 1px rgba(177, 200, 218, 0.5411764706);
+  box-shadow: 5px 5px 15px 1px rgba(177, 200, 218, 0.5411764706);
+  background-color: #e3f1fd;
 }
 .skills__card--circle {
   width: 100px;
@@ -408,10 +479,69 @@ body::-webkit-scrollbar-thumb {
   border: 5px #63cb53 solid;
 }
 
+.work-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(40px);
+  z-index: 2;
+}
+.work-circle-1 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  background-color: #6b6bfa;
+  border-radius: 50%;
+  z-index: 3;
+  top: 100px;
+  left: 100px;
+}
+.work-circle-2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  background-color: #63cb53;
+  border-radius: 50%;
+  z-index: 4;
+  top: 200px;
+  left: 30px;
+}
+.work-circle-3 {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  background-color: #fe8754;
+  border-radius: 50%;
+  z-index: 3;
+  bottom: 80px;
+  left: 160px;
+}
+.work-circle-4 {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  background-color: #ff7dd4;
+  border-radius: 50%;
+  z-index: 3;
+  bottom: 120px;
+  right: 100px;
+}
+.work-circle-5 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #fe8754;
+  border-radius: 50%;
+  z-index: 4;
+  top: 100px;
+  right: 70px;
+}
+
 .work {
   margin-top: 50px;
   width: 100%;
   height: calc(90vh - 70px);
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -422,6 +552,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   align-items: center;
   flex-direction: column;
+  z-index: 8;
 }
 .work__cards {
   display: flex;
@@ -435,8 +566,9 @@ body::-webkit-scrollbar-thumb {
   max-width: 30%;
   padding: 10px;
   border-radius: 15px;
-  -webkit-box-shadow: 5px 5px 15px 1px #b1c8da;
-  box-shadow: 5px 5px 15px 1px #b1c8da;
+  -webkit-box-shadow: 5px 5px 15px 1px rgba(177, 200, 218, 0.5411764706);
+  box-shadow: 5px 5px 15px 1px rgba(177, 200, 218, 0.5411764706);
+  background-color: #e3f1fd;
 }
 .work__card--preview {
   width: 100%;
@@ -478,47 +610,67 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   position: absolute;
   z-index: 2;
-  filter: blur(45px);
+  filter: blur(40px);
 }
 .contact__bg__circle-1 {
   width: 70px;
   height: 70px;
+  position: absolute;
   background-color: #ff7dd4;
   border-radius: 50%;
   z-index: 4;
-  position: absolute;
-  top: 30px;
+  top: 70px;
   left: 150px;
 }
 .contact__bg__circle-2 {
   width: 100px;
   height: 100px;
-  background-color: #ff8f5f;
+  position: absolute;
+  background-color: #fe8754;
   border-radius: 50%;
   z-index: 3;
-  position: absolute;
   bottom: -70px;
   left: 60px;
 }
 .contact__bg__circle-3 {
   width: 100px;
   height: 100px;
+  position: absolute;
   background-color: #6b6bfa;
   border-radius: 50%;
   z-index: 3;
-  position: absolute;
   bottom: 40px;
   right: 40px;
 }
 .contact__bg__circle-4 {
   width: 70px;
   height: 70px;
+  position: absolute;
   background-color: #63cb53;
   border-radius: 50%;
   z-index: 4;
-  position: absolute;
   top: -50px;
   right: 15px;
+}
+.contact__bg__circle-5 {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  background-color: #ff7dd4;
+  border-radius: 50%;
+  z-index: 4;
+  top: 40px;
+  right: 300px;
+}
+.contact__bg__circle-6 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  background-color: #63cb53;
+  border-radius: 50%;
+  z-index: 4;
+  bottom: 40px;
+  left: 300px;
 }
 
 .contact {

@@ -23,3 +23,10 @@
 @mixin transition {
   transition: all 150ms ease-in-out;
 }
+
+@mixin circle-config($bg-color, $z-index) {
+  position: absolute;
+  background-color: $bg-color;
+  border-radius: 50%;
+  z-index: $z-index;
+}

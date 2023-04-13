@@ -756,33 +756,24 @@ body::-webkit-scrollbar-thumb {
   color: #e3f1fd;
 }
 .contact__btns {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(2, 1fr);
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .contact__btn {
   width: 100%;
   display: flex;
+  justify-content: center;
   margin: 10px 0;
   padding: 0 10px;
 }
-.contact__btn:first-child, .contact__btn:nth-child(3) {
-  justify-content: end;
-}
-.contact__btn:nth-child(2), .contact__btn:last-child {
-  justify-content: start;
-}
-.contact__link {
-  width: 130px;
-  color: #e3f1fd;
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: #6b6bfa;
-  text-align: center;
-  border-radius: 10px;
+.contact__logo {
+  font-size: 50px;
+  color: #6b6bfa;
   transition: all 150ms ease-in-out;
 }
-.contact__link:hover, .contact__link:active {
-  background-color: #ff7dd4;
+.contact__logo:hover, .contact__logo:active {
+  color: #ff7dd4;
 }

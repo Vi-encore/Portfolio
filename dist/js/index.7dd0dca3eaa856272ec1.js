@@ -81,9 +81,20 @@ console.log("working");
 let imgs = document.querySelectorAll(".work__card--img");
 let links = document.querySelectorAll(".work__card-link");
 
+let contactLogo = document.querySelectorAll(".contact__logo");
+let contactLink = document.querySelectorAll(".contact__link");
+
 imgs.forEach((photo) => {
   photo.addEventListener("click", () => {
     links.forEach((link) => {
+      link.click();
+    });
+  });
+});
+
+contactLogo.forEach((logo) => {
+  logo.addEventListener("click", () => {
+    contactLink.forEach((link) => {
       link.click();
     });
   });

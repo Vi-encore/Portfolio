@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
   font-weight: 500;
 }
-.nav__link:focus {
+.nav__link:focus, .nav__link:hover, .nav__link:active {
   border-bottom: 2px #1b1b21 solid;
   transition: all 150ms ease-in-out;
 }

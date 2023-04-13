@@ -63,7 +63,9 @@
     text-decoration: none;
     font-weight: $mid;
 
-    &:focus {
+    &:focus,
+    &:hover,
+    &:active {
       border-bottom: 2px $black solid;
       @include transition;
     }

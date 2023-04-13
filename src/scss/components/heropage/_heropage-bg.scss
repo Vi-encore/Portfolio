@@ -12,7 +12,7 @@
   &__circle1 {
     @include widthHeight(200px, 200px);
 
-    background-color: #6b6bff;
+    background-color: $purple;
     border-radius: 50%;
 
     position: absolute;
@@ -24,7 +24,7 @@
 
   &__circle2 {
     @include widthHeight(300px, 300px);
-    background-color: #ff7dd4;
+    background-color: $pink;
     border-radius: 50%;
 
     position: absolute;
@@ -36,7 +36,7 @@
 
   &__circle3 {
     @include widthHeight(100px, 100px);
-    background-color: #63cb53;
+    background-color: $green;
     border-radius: 50%;
 
     position: absolute;
@@ -47,7 +47,7 @@
 
   &__circle4 {
     @include widthHeight(150px, 150px);
-    background-color: #ff8f5f;
+    background-color: $orange;
     border-radius: 50%;
 
     z-index: 2;
@@ -59,7 +59,7 @@
 
   &__circle5 {
     @include widthHeight(100px, 100px);
-    background-color: #6b6bfa;
+    background-color: $purple;
     border-radius: 50%;
 
     z-index: 3;
@@ -70,7 +70,7 @@
 
   &__circle6 {
     @include widthHeight(100px, 100px);
-    background-color: #63cb53;
+    background-color: $green;
     border-radius: 50%;
 
     position: absolute;
@@ -82,7 +82,7 @@
   &__circle7 {
     @include widthHeight(120px, 120px);
 
-    background-color: #5f5ffb;
+    background-color: $purple;
     border-radius: 50%;
 
     position: absolute;
@@ -94,7 +94,7 @@
 
   &__circle8 {
     @include widthHeight(90px, 90px);
-    background-color: #fe8754;
+    background-color: $orange;
     border-radius: 50%;
 
     z-index: 4;
@@ -102,5 +102,29 @@
     position: absolute;
     right: 350px;
     top: 550px;
+  }
+
+  &__circle9 {
+    @include widthHeight(70px, 70px);
+    background-color: $pink;
+    border-radius: 50%;
+
+    z-index: 4;
+
+    position: absolute;
+    right: 30%;
+    top: 10px;
+  }
+
+  &__circle10 {
+    @include widthHeight(70px, 70px);
+    background-color: $green;
+    border-radius: 50%;
+
+    z-index: 5;
+
+    position: absolute;
+    right: 35%;
+    top: 0px;
   }
 }

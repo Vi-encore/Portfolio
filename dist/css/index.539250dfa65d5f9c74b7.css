@@ -152,7 +152,7 @@ body::-webkit-scrollbar-thumb {
 .heropage__circle1 {
   width: 200px;
   height: 200px;
-  background-color: #6b6bff;
+  background-color: #5f5ffb;
   border-radius: 50%;
   position: absolute;
   top: 350px;
@@ -182,7 +182,7 @@ body::-webkit-scrollbar-thumb {
 .heropage__circle4 {
   width: 150px;
   height: 150px;
-  background-color: #ff8f5f;
+  background-color: #fe8754;
   border-radius: 50%;
   z-index: 2;
   position: absolute;
@@ -192,7 +192,7 @@ body::-webkit-scrollbar-thumb {
 .heropage__circle5 {
   width: 100px;
   height: 100px;
-  background-color: #6b6bfa;
+  background-color: #5f5ffb;
   border-radius: 50%;
   z-index: 3;
   position: absolute;
@@ -228,6 +228,26 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   right: 350px;
   top: 550px;
+}
+.heropage__circle9 {
+  width: 70px;
+  height: 70px;
+  background-color: #ff7dd4;
+  border-radius: 50%;
+  z-index: 4;
+  position: absolute;
+  right: 30%;
+  top: 10px;
+}
+.heropage__circle10 {
+  width: 70px;
+  height: 70px;
+  background-color: #63cb53;
+  border-radius: 50%;
+  z-index: 5;
+  position: absolute;
+  right: 35%;
+  top: 0px;
 }
 
 .heropage {

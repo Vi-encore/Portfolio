@@ -37,20 +37,43 @@
     box-shadow: 5px 5px 15px 1px #b1c8da8a;
     background-color: $main-color;
 
+    position: relative;
+
     &--circle {
-      width: 100px;
-      height: 100px;
+      //   padding-bottom: 10px;
+      width: 110px;
+      height: 150px;
       @include flex-center;
       border-radius: 50%;
-      //   padding-bottom: 10px;
+      position: relative;
+    }
+
+    &--logo {
+      position: absolute;
+      top: 0;
+      left: 0; //absolute
+      z-index: 2;
+
+      font-size: 100px;
+      opacity: 0.1;
     }
 
     &--percent {
-      font-size: $em-1-5;
+      font-size: 20px;
       font-weight: $large;
       letter-spacing: 1px;
+      // color: $main-color;
+
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 3;
       //   color: $main-color;
     }
+
+    // &--percent:last-child {
+    //   position: relative;
+    // }
   }
 
   &__info-head {
@@ -84,32 +107,35 @@
   //   }
 }
 
-.c1 {
-  background-color: #e4392650;
-  border: 5px #e43926 solid;
-}
+.c {
+  &--1 {
+    // @include widthHeight(70px, 70px);
+    // @include flex-center;
+    // background-color: #e4392650;
+    // border: 5px #e43926 solid;
+    // -webkit-text-stroke: 1px #e43926;
+    // border-radius: 50%;
 
-.c2 {
-  background-color: #2545c250;
-  border: 5px #2545c2 solid;
-}
+    @include cardsCircle(#e43926, #e4392620);
+  }
 
-.c3 {
-  background-color: #eed30c50;
-  border: 5px #eed30c solid;
-}
+  &--2 {
+    @include cardsCircle(#2545c2, #2545c220);
+  }
 
-.c4 {
-  background-color: #f0503350;
-  border: 5px #f05033 solid;
-}
+  &--3 {
+    @include cardsCircle(#e7b228, #e7b22820);
+  }
 
-.c5 {
-  background-color: #cd679950;
-  border: 5px #cd6799 solid;
-}
+  &--4 {
+    @include cardsCircle(#f05033, #f0503320);
+  }
 
-.c6 {
-  background-color: #63cb5350;
-  border: 5px #63cb53 solid;
+  &--5 {
+    @include cardsCircle(#cd6799, #cd679920);
+  }
+
+  &--6 {
+    @include cardsCircle(#63cb53, #63cb5320);
+  }
 }

@@ -30,3 +30,13 @@
   border-radius: 50%;
   z-index: $z-index;
 }
+
+@mixin cardsCircle($color, $bg-color) {
+  @include widthHeight(65px, 65px);
+  @include flex-center;
+  background-color: $bg-color;
+  color: $color;
+  border: 4px $color solid;
+  // -webkit-text-stroke: 1px $main-color;
+  border-radius: 50%;
+}

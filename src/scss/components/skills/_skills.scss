@@ -5,6 +5,7 @@
 
   @include flex-center;
   position: relative;
+  margin-bottom: 150px;
 
   &__wrapper {
     width: 80%;
@@ -89,7 +90,9 @@
 
   &__info-text {
     // height: 300px;
-    padding: 0 60px;
+    // height: 250px;
+    // text-overflow: ellipsis;
+    padding: 0 50px;
     text-align: justify;
     font-weight: $mid;
     line-height: 25px;
@@ -102,10 +105,11 @@
     // -webkit-box-orient: vertical;
   }
 
-  //   &__info-text:hover {
-  //     -webkit-line-clamp: unset;
-  //     line-clamp: unset;
-  //   }
+  &__info-text:hover {
+    -webkit-line-clamp: unset;
+    line-clamp: unset;
+    height: auto;
+  }
 
   //   &__info-text:hover &__card {
   //     height: 400px;

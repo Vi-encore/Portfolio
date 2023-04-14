@@ -12,7 +12,6 @@
 body {
   overflow-x: hidden;
   overflow-y: scroll;
-  background-color: $main-color;
 }
 
 body::-webkit-scrollbar {
@@ -28,8 +27,13 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px;
 }
 
-.container {
-  @include widthHeight(100%, 100vh);
+ul {
+  margin-bottom: 0;
+}
+
+.container__all {
+  @include widthHeight(100%, 100%);
+  background-color: $main-color;
 }
 
 .hidden {
@@ -43,4 +47,23 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
 
   padding-bottom: 50px;
+}
+
+.dark {
+  background-color: $black;
+}
+
+.dark-nav {
+  background: #1b1b21;
+  background: linear-gradient(
+    180deg,
+    #1b1b21 0%,
+    #1b1b21e6 80%,
+    #1b1b21cc 90%,
+    #1b1b21b3 100%
+  );
+}
+
+.light-text {
+  color: $main-color;
 }

@@ -38,6 +38,8 @@
   &__menu {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     // margin: 0 $em;
   }
 
@@ -62,6 +64,7 @@
     text-transform: capitalize;
     text-decoration: none;
     font-weight: $mid;
+    color: $black;
 
     &:focus,
     &:hover,
@@ -109,4 +112,9 @@
   margin: auto 0;
   padding-left: 4px;
   vertical-align: middle;
+}
+
+.js-light {
+  filter: brightness(0) saturate(100%) invert(93%) sepia(3%) saturate(3894%)
+    hue-rotate(184deg) brightness(102%) contrast(103%);
 }

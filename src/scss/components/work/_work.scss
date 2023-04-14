@@ -6,6 +6,10 @@
   position: relative;
   @include flex-center;
 
+  &__carousele {
+    width: 50%;
+  }
+
   &__wrapper {
     width: 80%;
     height: 100%;
@@ -14,6 +18,7 @@
     align-items: center;
     flex-direction: column;
     z-index: 8;
+    // margin-top: 150px;
   }
 
   &__cards {
@@ -23,21 +28,21 @@
     flex-direction: row;
     width: 100%;
 
-    margin-top: 50px;
+    // margin-top: 50px;
   }
 
   &__card {
-    max-width: 300px;
+    // max-width: 300px;
     padding: 10px;
     border-radius: 30px;
-    -webkit-box-shadow: 5px 5px 15px 1px #b1c8da8a;
-    box-shadow: 5px 5px 15px 1px #b1c8da8a;
+    // -webkit-box-shadow: 5px 5px 15px 1px #b1c8da8a;
+    // box-shadow: 5px 5px 15px 1px #b1c8da8a;
     background-color: $main-color;
     @include transition;
 
-    &:hover {
-      scale: 1.1;
-    }
+    // &:hover {
+    //   scale: 1.05;
+    // }
 
     &--preview {
       width: 100%;
@@ -45,37 +50,35 @@
       @include transition;
     }
 
-    // &--link {
-    //   width: fit-content;
-    //   height: 150px;
-    // }
-
     &--img {
       width: inherit;
       height: inherit;
       border-radius: 30px;
+      height: 400px;
     }
 
-    // &--img:hover {
-    //   border: 5px #ff7dd420 solid;
-    //   border-radius: 30px;
-    // }
+    &--info {
+      background-color: #353c42;
+      border-radius: 15px;
+    }
 
     &--name {
       padding: 0 0 10px;
       text-transform: uppercase;
       font-weight: $large;
       font-size: $em-1-5;
+      color: $main-color;
+      @include transition;
     }
 
-    &--btn {
-      // @include flex-center;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      padding: 20px 0;
-    }
+    // &--btn {
+    //   // @include flex-center;
+    //   display: flex;
+    //   justify-content: space-between;
+    //   align-items: center;
+    //   flex-direction: column;
+    //   padding: 20px 0;
+    // }
 
     &--github {
       text-decoration: none;

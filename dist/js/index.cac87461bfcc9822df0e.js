@@ -14,6 +14,70 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./js/api/requestData.js":
+/*!*******************************!*\
+  !*** ./js/api/requestData.js ***!
+  \*******************************/
+/***/ (() => {
+
+async function getInfo() {
+  let url = "https://my-json-server.typicode.com/Vi-encore/test/projects";
+  let response = await fetch(url)
+    .then((response) => response.json())
+    .then((json) => createCards(json));
+}
+
+function createCards(response) {
+  const cardCards = document.querySelector(".work__cards");
+  let result = "";
+
+  response.forEach((res) => {
+    let { hostingURL, imgURL, repositoryURL } = res;
+    let card = `<div
+    class="work__card carousel-item"
+    data-bs-interval="10000"
+  >
+    <a
+      href="${hostingURL}"
+      class="work__card-link"
+      target="_blank"
+    >
+      <img
+        src="${imgURL}"
+        class="d-block w-100 work__card--img"
+        alt="..."
+      />
+    </a>
+    <div
+      class="carousel-caption d-none d-md-block work__card--info"
+    >
+      <h5 class="work__card--name">Calculator</h5>
+      <a
+        href="${repositoryURL}"
+        target="blank"
+        class="work__card--github"
+        >Repository
+      </a>
+    </div>
+  </div>`;
+
+    result += card;
+  });
+
+  cardCards.innerHTML = result;
+  let firstCard = document.querySelector(".work__card");
+  firstCard.classList.add("active");
+}
+
+window.addEventListener("load", () => {
+  getInfo();
+});
+
+// window.onload(getInfo());
+
+
+/***/ }),
+
 /***/ "./js/theme/changeTheme.js":
 /*!*********************************!*\
   !*** ./js/theme/changeTheme.js ***!
@@ -221,20 +285,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_style__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @scss/style */ "./scss/style.scss");
 /* harmony import */ var _theme_changeTheme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme/changeTheme */ "./js/theme/changeTheme.js");
 /* harmony import */ var _theme_changeTheme__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_theme_changeTheme__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _api_requestData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api/requestData */ "./js/api/requestData.js");
+/* harmony import */ var _api_requestData__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_api_requestData__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
-// import { pitch } from "mini-css-extract-plugin/types/loader";
-// console.log("working");
 
-// async function getInfo() {
-//   let url = "https://my-json-server.typicode.com/Vi-encore/test/projects";
-//   let response = await fetch(url)
-//     .then((response) => response.json())
-//     .then((json) => console.log(json));
-// }
-
-// setTimeout(getInfo(), 1500);
 
 })();
 

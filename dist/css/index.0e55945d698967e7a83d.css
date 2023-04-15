@@ -619,8 +619,8 @@ ul {
   justify-content: center;
   align-items: center;
 }
-.work__carousele {
-  width: 50%;
+.work__carousel {
+  width: 60%;
 }
 .work__wrapper {
   width: 80%;

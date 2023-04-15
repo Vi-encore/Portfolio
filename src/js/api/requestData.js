@@ -47,4 +47,8 @@ function createCards(response) {
   firstCard.classList.add("active");
 }
 
-document.onload(getInfo());
+window.addEventListener("load", () => {
+  getInfo();
+});
+
+// window.onload(getInfo());

@@ -20,6 +20,7 @@ const sectionHeader = document.querySelectorAll(".section__header"); ////remove 
 const sectionHeaderLast = document.querySelector(".contact__write"); //
 const skillsInfoHead = document.querySelectorAll(".skills__info-head"); //
 const skillsInfoText = document.querySelectorAll(".skills__info-text"); //
+const skillsLogo = document.querySelectorAll(".skills__card--logo");
 
 const body = document.querySelector(".container__all"); //
 const skillsCards = document.querySelectorAll(".skills__card"); //
@@ -31,6 +32,10 @@ const jsDark = document.querySelector(".js-dark");
 ///////////add icons on skills => white
 
 jsDark.addEventListener("click", () => {
+  skillsLogo.forEach((logo) => {
+    logo.classList.add("light-text");
+  });
+
   navItems.forEach((item) => {
     item.classList.add("light-text");
   });
@@ -70,6 +75,10 @@ jsDark.addEventListener("click", () => {
 });
 
 jsLight.addEventListener("click", () => {
+  skillsLogo.forEach((logo) => {
+    logo.classList.remove("light-text");
+  });
+
   navItems.forEach((item) => {
     item.classList.remove("light-text");
   });

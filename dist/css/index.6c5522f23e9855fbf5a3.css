@@ -14,6 +14,7 @@
   font-size: 16px;
   color: #1b1b21;
   scroll-behavior: smooth;
+  transition: all 150ms ease-in-out;
 }
 
 body {
@@ -54,19 +55,6 @@ ul {
   letter-spacing: 3px;
   text-transform: uppercase;
   padding-bottom: 50px;
-}
-
-.dark {
-  background-color: #1b1b21;
-}
-
-.dark-nav {
-  background: #1b1b21;
-  background: linear-gradient(180deg, #1b1b21 0%, rgba(27, 27, 33, 0.9019607843) 80%, rgba(27, 27, 33, 0.8) 90%, rgba(27, 27, 33, 0.7019607843) 100%);
-}
-
-.light-text {
-  color: #e3f1fd;
 }
 
 .nav {
@@ -802,4 +790,17 @@ ul {
 }
 .contact__logo:hover, .contact__logo:active {
   color: #ff7dd4;
+}
+
+.dark {
+  background-color: #1b1b21;
+}
+
+.dark-nav {
+  background: #1b1b21;
+  background: linear-gradient(180deg, #1b1b21 0%, rgba(27, 27, 33, 0.9019607843) 80%, rgba(27, 27, 33, 0.8) 90%, rgba(27, 27, 33, 0.7019607843) 100%);
+}
+
+.light-text {
+  color: #e3f1fd;
 }

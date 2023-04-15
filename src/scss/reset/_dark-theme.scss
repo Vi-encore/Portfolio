@@ -1,0 +1,18 @@
+.dark {
+  background-color: $black;
+}
+
+.dark-nav {
+  background: #1b1b21;
+  background: linear-gradient(
+    180deg,
+    #1b1b21 0%,
+    #1b1b21e6 80%,
+    #1b1b21cc 90%,
+    #1b1b21b3 100%
+  );
+}
+
+.light-text {
+  color: $main-color;
+}

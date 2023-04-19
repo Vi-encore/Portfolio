@@ -50,5 +50,3 @@ function createCards(response) {
 window.addEventListener("load", () => {
   getInfo();
 });
-
-// window.onload(getInfo());

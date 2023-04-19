@@ -73,7 +73,25 @@ window.addEventListener("load", () => {
   getInfo();
 });
 
-// window.onload(getInfo());
+
+/***/ }),
+
+/***/ "./js/loadUsers/loadUsers.js":
+/*!***********************************!*\
+  !*** ./js/loadUsers/loadUsers.js ***!
+  \***********************************/
+/***/ (() => {
+
+// localStorage.clear();
+
+document.addEventListener("DOMContentLoaded", () => {
+  let visitCount = localStorage.getItem("visitCount");
+
+  visitCount === null ? (visitCount = 1) : visitCount++;
+  console.log(`You visited ${visitCount} times`);
+
+  localStorage.setItem("visitCount", visitCount);
+});
 
 
 /***/ }),
@@ -287,6 +305,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _theme_changeTheme__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_theme_changeTheme__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _api_requestData__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api/requestData */ "./js/api/requestData.js");
 /* harmony import */ var _api_requestData__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_api_requestData__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _loadUsers_loadUsers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./loadUsers/loadUsers */ "./js/loadUsers/loadUsers.js");
+/* harmony import */ var _loadUsers_loadUsers__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_loadUsers_loadUsers__WEBPACK_IMPORTED_MODULE_3__);
+
 
 
 

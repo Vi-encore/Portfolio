@@ -10,7 +10,7 @@ function createCards(response) {
   let result = "";
 
   response.forEach((res) => {
-    let { hostingURL, imgURL, repositoryURL } = res;
+    let { hostingURL, imgURL, repositoryURL, name } = res;
     let card = `<div
     class="work__card carousel-item"
     data-bs-interval="10000"
@@ -29,7 +29,7 @@ function createCards(response) {
     <div
       class="carousel-caption d-none d-md-block work__card--info"
     >
-      <h5 class="work__card--name">Calculator</h5>
+      <h5 class="work__card--name">${name}</h5>
       <a
         href="${repositoryURL}"
         target="blank"

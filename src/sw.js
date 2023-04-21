@@ -23,15 +23,17 @@ const assets = [
   "./img/cat.jpg",
 ];
 
-self.addEventListener("install", (installEvent) => {
-  installEvent.waitUntil(
-    caches.open(staticDevCoffee).then((cache) => {
-      // location.reload(true);
-      // cache.reload();
-      cache.addAll(assets);
-      // console.log(assets);
-    })
-  );
+self.addEventListener("install", async (installEvent) => {
+  let cache = await caches.open(staticDevCoffee);
+  await cache.addAll(assets);
+  // installEvent.waitUntil(
+  // caches.open(staticDevCoffee).then((cache) => {
+  // location.reload(true);
+  // cache.reload();
+  // cache.addAll(assets);
+  // console.log(assets);
+  // })
+  // );
 });
 
 self.addEventListener("activate", async (e) => {

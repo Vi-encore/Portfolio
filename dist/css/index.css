@@ -137,14 +137,14 @@ ul {
 }
 
 .ua::after {
-  content: url(../img/8264ae2eae8c9a8124e5.png);
+  content: url(../img/ua-flag.png);
   margin: auto 0;
   padding-left: 4px;
   vertical-align: middle;
 }
 
 .gb::after {
-  content: url(../img/2cc184aacc9e558496e3.png);
+  content: url(../img/en-flag.png);
   margin: auto 0;
   padding-left: 4px;
   vertical-align: middle;

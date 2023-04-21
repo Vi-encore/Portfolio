@@ -1,6 +1,7 @@
 const staticDevCoffee = "dev-coffee-site-v1";
 const assets = [
   "/",
+  "./manifest/manifest.json",
   "./index.html",
   "./css/index.css",
   // "./scss/style.scss",
@@ -30,6 +31,15 @@ self.addEventListener("install", (installEvent) => {
       cache.addAll(assets);
       // console.log(assets);
     })
+  );
+});
+
+self.addEventListener("activate", async (e) => {
+  let data = await caches.keys();
+  await Promise.all(
+    data
+      .filter((cacheName) => cacheName !== staticDevCoffee)
+      .map((cachesData) => caches.delete(cachesData))
   );
 });
 

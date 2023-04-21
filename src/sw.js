@@ -1,4 +1,4 @@
-const staticDevCoffee = "dev-coffee-site-v2";
+const staticDevCoffee = "dev-coffee-site-v1";
 const assets = [
   "/",
   "./manifest/manifest.json",
@@ -36,6 +36,7 @@ self.addEventListener("install", (installEvent) => {
 
 self.addEventListener("activate", async (e) => {
   let data = await caches.keys();
+  console.log(data);
   await Promise.all(
     data
       .filter((cacheName) => cacheName !== staticDevCoffee)

@@ -783,6 +783,16 @@ ul {
   margin: 10px 0;
   padding: 0 10px;
 }
+.contact__no-internet {
+  font-size: 24px;
+  color: #6b6bfa;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+.contact__no-internet:hover {
+  color: #ff7dd4;
+}
 .contact__logo {
   font-size: 50px;
   color: #6b6bfa;
@@ -790,6 +800,10 @@ ul {
 }
 .contact__logo:hover, .contact__logo:active {
   color: #ff7dd4;
+}
+
+.w-more {
+  width: 70%;
 }
 
 .dark {

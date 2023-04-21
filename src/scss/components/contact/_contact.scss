@@ -44,6 +44,18 @@
     padding: 0 10px;
   }
 
+  &__no-internet {
+    font-size: $em-1-5;
+    color: $purple;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: $large;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
   // &__btn:first-child,
   // &__btn:nth-child(3) {
   //   justify-content: end;
@@ -81,4 +93,8 @@
   //   //   background-color: #ff7dd4;
   //   // }
   // }
+}
+
+.w-more {
+  width: 70%;
 }

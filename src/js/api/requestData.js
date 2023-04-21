@@ -54,6 +54,7 @@ window.addEventListener("load", () => {
 
 function createNoInternet(error) {
   const cardCards = document.querySelector(".work__cards");
+
   let result = "";
 
   result = `<div class="work__card carousel-item active" data-bs-interval="10000">
@@ -88,4 +89,10 @@ function createNoInternet(error) {
 </div>`;
 
   cardCards.innerHTML = result;
+
+  const contactArea = document.querySelector(".contact__btns");
+  contactArea.classList.add("w-more");
+  contactArea.innerHTML = `<p class="contact__no-internet">
+  Sorry, You have no internet connection. try again later!
+</p>`;
 }
